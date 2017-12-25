@@ -1,39 +1,17 @@
-/**
- * CSS for all versions of the page (pop-up and full-page)
- */
-@media screen {
-    #form {
-        overflow-y: scroll;
-    }
-
-    .row > h2,
-    .row > p {
-        text-align: center;
-    }
-
-    #action-box {
-        padding-top: 10px;
-    }
-
-    label {
-        text-align: center;
-    }
-
-    #close-icon {
-        color: crimson;
-        font-weight: bold;
-        cursor: pointer;
-    }
+body {
+    width: 300px;
+    margin: 10px;
+    white-space: nowrap;
 }
 
-/**
- * CSS Specific to the pop-up version of the page (based on the width)
- */
-@media screen and (max-width: 550px) {
-    body {
-        width: 500px;
-        max-height: 520px;
-        padding:10px;
-        overflow: hidden;
-    }
+h1 {
+    font-size: 15px;
+}
+
+#currentTime:before {
+    content: 'Current Time: ';
+}
+
+#typicalTime:before {
+    content: 'Typical Time: ';
 }

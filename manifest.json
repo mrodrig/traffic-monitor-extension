@@ -1,20 +1,11 @@
 {
-  "name": "",
+  "manifest_version": 2,
+
+  "name": "Traffic Monitor",
+  "description": "Traffic Monitor Chrome Extension",
   "version": "0.1",
-  "manifest_version": 1,
-  "description": "Real-time speech to text prototype.",
-  // Used only for local development so OAuth works as if local version was installed from the store:
-  //"key": "",
-  "permissions": [],
+
   "browser_action": {
-//    "default_icon": "icon.png",
-    "default_popup": "main.html"
-  },
-  "background": {
-    "scripts": [
-      "js/lib/jquery.min.js",
-      "js/lib/underscore.min.js",
-      "js/main.js"
-    ]
+    "default_popup": "popup.html"
   }
 }
