@@ -1,44 +1,20 @@
 {
-  "name": "INSuRE - NEU Anti-Phishing Extension",
-  "version": "2.0",
-  "manifest_version": 2,
-  "description": "INSuRE - Anti-Phishing Extension developed by the Phishing Research Team in Northeastern University's IA 8660 course.",
+  "name": "",
+  "version": "0.1",
+  "manifest_version": 1,
+  "description": "Real-time speech to text prototype.",
   // Used only for local development so OAuth works as if local version was installed from the store:
-  "key": "<REPLACE_WITH_KEY_FROM_GOOGLE_CHROME_STORE>",
-  "permissions": [
-    "activeTab",
-    "identity",
-    "storage",
-    "notifications",
-    "*://*.google.com/*"
-  ],
+  //"key": "",
+  "permissions": [],
   "browser_action": {
-    "default_icon": "icon.png",
+//    "default_icon": "icon.png",
     "default_popup": "main.html"
   },
   "background": {
     "scripts": [
       "js/lib/jquery.min.js",
       "js/lib/underscore.min.js",
-      "js/lib/base64.js",
-      "js/background/constants.js",
-      "js/background/storage.js",
-      "js/background/listeners.js",
-      "js/background/gmail/auth.js",
-      "js/background/gmail/message.js",
-      "js/background/gmail/fetch.js",
-      "js/background/safebrowsing/check.js",
-      "js/background/secprototype.js",
-      "js/background/database.js",
-      "js/background/keywords.js",
-      "js/background/notifier.js"
-    ]
-  },
-  "content_security_policy": "script-src https://*.google.com 'unsafe-eval'; object-src 'self'",
-  "oauth2": {
-    "client_id": "<REPLACE_WITH_GOOGLE_GMAIL_API_KEY_ID>",
-    "scopes": [
-      "https://www.googleapis.com/auth/gmail.modify"
+      "js/main.js"
     ]
   }
 }
